@@ -14,13 +14,19 @@ Successful output:
 
     XmlNote{to='Tove', from='Jani', heading='Reminder', body='Don't forget me this weekend!'}
 
+### Building
+./gradlew build
+
+### Running
+./gradlew run
+
 ## Notes
 
 The settings.gradle file contains jersey, jaxb, weld library definitions and versions. For the libraries that are
-actually used in this demo; look at the [build.gradle]build.gradle dependencies section.
+actually used in this demo; look at the [build.gradle](build.gradle) dependencies section.
 
 To change the demo from non-working to working explicitly set the version of jersey-media-jaxb library used to 3.1.1
-in the [settings.gradle]settings.gradle file 
+in the [settings.gradle](settings.gradle) file 
 
     - .versionRef('jerseyVersion')
     + .version('3.1.1') 
