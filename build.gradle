@@ -1,0 +1,28 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation jakartaLibs.enterprise.cdi.api
+    implementation jakartaLibs.ws.rs.api
+    implementation jakartaLibs.xml.bind.api
+
+    implementation jbossLibs.weld.se.core
+
+    implementation jerseyLibs.jersey.client
+    implementation jerseyLibs.jersey.proxy.client
+    implementation jerseyLibs.jersey.cdi2.se
+    implementation jerseyLibs.jersey.media.jaxb
+
+    implementation jaxbLibs.jaxb.core
+    implementation jaxbLibs.jaxb.runtime
+}
+
+application {
+    mainClass.set("com.acme.jersey.jaxb.issue.App")
+}
+
+wrapper {
+    gradleVersion = 8.5
+}
+
